@@ -12,16 +12,19 @@ import UIKit
 
 open class GentlerView:UIView {
     
-    var gradient:CAGradientLayer = CAGradientLayer()
+    fileprivate let gradient:CAGradientLayer = CAGradientLayer()
     
-    var currentGradient = 0
+    fileprivate var currentGradient = 0
     
     
     fileprivate var startPoint:CGPoint = Pointer.top_right.value
     fileprivate var endPoint:CGPoint = Pointer.bottom_left.value
     
     
+    //API
     
+    
+    /// Initial point
     open var startGentlePoint:Pointer = Pointer.top_right {
         didSet {
             startPoint = startGentlePoint.value
@@ -31,6 +34,7 @@ open class GentlerView:UIView {
     open var animationDuration:TimeInterval = 3.0
     
     
+    /// End point
     open var endGentlePoint:Pointer = Pointer.bottom_left {
         didSet {
             endPoint = endGentlePoint.value
@@ -40,10 +44,16 @@ open class GentlerView:UIView {
     
     fileprivate var colors:[UIColor] = [UIColor.red,UIColor.blue,UIColor.gray,UIColor.green]
     
+    /// Add color to array
+    ///
+    /// - Parameter color: addable color
     open func addColor(_ color:UIColor) {
         colors.append(color)
     }
     
+    /// Setup array of colors
+    ///
+    /// - Parameter colors: Colors
     open func setColors(_ colors:[UIColor]) {
         self.colors = colors
     }
@@ -69,14 +79,14 @@ open class GentlerView:UIView {
         gradient.frame = bounds
     }
     
+    /// Method for launch animation
     open func startAnimate() {
-        setupFrame()
+        setup()
         
         animate()
     }
     
-    fileprivate func setupFrame() {
-        gradient.frame = bounds
+    fileprivate func setup() {
         gradient.startPoint = self.startPoint
         gradient.endPoint = self.endPoint
         gradient.colors = currentOfSetGradient()
@@ -84,7 +94,11 @@ open class GentlerView:UIView {
         layer.insertSublayer(gradient, at: 0)
     }
     
-    func currentOfSetGradient() -> [CGColor] {
+    fileprivate func setupFrame() {
+        gradient.frame = bounds
+    }
+    
+    fileprivate func currentOfSetGradient() -> [CGColor] {
         return [colors[currentGradient % colors.count].cgColor,colors[(currentGradient+1) % colors.count].cgColor]
     }
     
@@ -93,8 +107,8 @@ open class GentlerView:UIView {
         let animation = CABasicAnimation(keyPath: "colors")
         animation.toValue = currentOfSetGradient()
         animation.delegate = self
-        animation.isRemovedOnCompletion = false  // ??
-        animation.fillMode = kCAFillModeForwards  // ??
+        animation.isRemovedOnCompletion = false
+        animation.fillMode = kCAFillModeForwards
         animation.duration = animationDuration
         gradient.add(animation, forKey: nil)
     }
