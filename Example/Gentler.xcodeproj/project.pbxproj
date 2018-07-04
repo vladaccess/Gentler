@@ -42,11 +42,11 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6872FAE9C575C276E3A15C44 /* Pods-Gentler_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gentler_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gentler_Example/Pods-Gentler_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		84AE1F7579EEC4BA26FD45E6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		84AE1F7579EEC4BA26FD45E6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		AC26DE04C5A0405BDA93F643 /* Pods-Gentler_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gentler_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gentler_Tests/Pods-Gentler_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C5F445BC77AA69F63CA16A6B /* Pods_Gentler_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gentler_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CED9A8527B77FB7C15E5E47C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		E027C2ACD083E530F0C12173 /* Gentler.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = Gentler.podspec; path = ../Gentler.podspec; sourceTree = "<group>"; };
+		CED9A8527B77FB7C15E5E47C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E027C2ACD083E530F0C12173 /* Gentler.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Gentler.podspec; path = ../Gentler.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
