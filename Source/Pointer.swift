@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Pointer {
+public enum Pointer {
     case left
     case right
     case bottom
@@ -17,7 +17,7 @@ enum Pointer {
     case bottom_left
     case bottom_right
     
-    public var pointer:CGPoint {
+    public var value:CGPoint {
         switch self {
         case .top: return CGPoint(x: 0.5, y: 0)
         case .left: return CGPoint(x: 0, y: 0.5)
