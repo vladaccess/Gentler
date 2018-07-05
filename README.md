@@ -1,4 +1,5 @@
 # Gentler
+Animation of gradient
 
 [![CI Status](https://img.shields.io/travis/vladaccess/Gentler.svg?style=flat)](https://travis-ci.org/vladaccess/Gentler)
 [![Version](https://img.shields.io/cocoapods/v/Gentler.svg?style=flat)](https://cocoapods.org/pods/Gentler)
@@ -10,6 +11,7 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+Written in Swift 4. iOS 8.0+ Required
 
 ## Installation
 
