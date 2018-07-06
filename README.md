@@ -36,7 +36,7 @@ Gentler is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'Gentler', :git => 'https://github.com/vladaccess/Gentler.git'
+pod 'Gentler'
 ```
 
 ## Author
