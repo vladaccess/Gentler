@@ -1,0 +1,16 @@
+PODS:
+  - Gentler (0.1.0)
+
+DEPENDENCIES:
+  - Gentler (from `../`)
+
+EXTERNAL SOURCES:
+  Gentler:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Gentler: 57c8ca28e0d93eceebd523562a2585eec714d699
+
+PODFILE CHECKSUM: 9d21dce9e28b2faa7797e896dc7ac5d34ccb2d4e
+
+COCOAPODS: 1.5.3

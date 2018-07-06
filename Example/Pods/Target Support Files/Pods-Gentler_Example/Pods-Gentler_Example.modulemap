@@ -1,0 +1,6 @@
+framework module Pods_Gentler_Example {
+  umbrella header "Pods-Gentler_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
